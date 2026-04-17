@@ -32,3 +32,18 @@ def calculate_car_loan(principal, annual_rate, years):
     total_payments = years * 12
     emi = (principal * monthly_rate * (1 + monthly_rate) ** total_payments) / ((1 + monthly_rate) ** total_payments - 1)
     return emi
+
+#3 Factorial function
+def factorial(n):
+    """
+    Description:
+        This function calculates the factorial of a given number.
+    Parameter:
+        n (int): The number to calculate the factorial for.
+    Returns:
+        int: The factorial of the number.
+    """
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
