@@ -1,0 +1,5 @@
+#Password Strength Evaluator
+def evaluate_password(password: str) -> str:   
+    has_upper = any(char.isupper() for char in password)
+    has_digit = any(char.isdigit() for char in password)
+    return "STRONG" if len(password) >= 8 and has_upper and has_digit else "WEAK"
