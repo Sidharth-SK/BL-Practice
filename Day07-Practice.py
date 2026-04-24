@@ -9,7 +9,7 @@ list1.remove(3)
 list1 = [num for num in list1 if num != 5]
 
 #matrix transpose
-import numpy
+import numpy as np
 matrix: list[list[int]] = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 transposed_matrix: list[list[int]] = matrix.T
 print(f"Transposed matrix:\n{transposed_matrix}")
